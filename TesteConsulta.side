@@ -1,0 +1,407 @@
+{
+  "id": "ff523138-6853-47e2-b19c-68017faaddbf",
+  "version": "2.0",
+  "name": "TesteConsulta",
+  "url": "https://localhost:5001/Contatos",
+  "tests": [{
+    "id": "d1224dc6-d8ef-4097-82f6-1dab2cf349e2",
+    "name": "TesteGeral",
+    "commands": [{
+      "id": "f3ac18f8-0fa6-4add-a747-fb1fcc0be646",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:5001/Contatos",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c893caa-c475-4d18-9f6e-3611c70ef5fa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "982e5924-6a4c-472a-921b-0bcf1a60f323",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.navbar-nav:nth-child(2) > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Identity/Account/Login')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "842a4b53-42b5-4eed-b07f-044694893678",
+      "comment": "",
+      "command": "type",
+      "target": "id=Input_Email",
+      "targets": [
+        ["id=Input_Email", "id"],
+        ["name=Input.Email", "name"],
+        ["css=#Input_Email", "css:finder"],
+        ["xpath=//input[@id='Input_Email']", "xpath:attributes"],
+        ["xpath=//form[@id='account']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Teste@teste.com"
+    }, {
+      "id": "64fb67a6-09a4-4fde-82a3-c733022463b6",
+      "comment": "",
+      "command": "type",
+      "target": "id=Input_Password",
+      "targets": [
+        ["id=Input_Password", "id"],
+        ["name=Input.Password", "name"],
+        ["css=#Input_Password", "css:finder"],
+        ["xpath=//input[@id='Input_Password']", "xpath:attributes"],
+        ["xpath=//form[@id='account']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Teste@teste.com1"
+    }, {
+      "id": "4a291436-cfe4-4fc0-ae80-b19f1bc4b5bd",
+      "comment": "",
+      "command": "click",
+      "target": "id=Input_RememberMe",
+      "targets": [
+        ["id=Input_RememberMe", "id"],
+        ["name=Input.RememberMe", "name"],
+        ["css=#Input_RememberMe", "css:finder"],
+        ["xpath=//input[@id='Input_RememberMe']", "xpath:attributes"],
+        ["xpath=//form[@id='account']/div[3]/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87cd058a-c135-459d-bae8-a96ce1d293ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-submit",
+      "targets": [
+        ["id=login-submit", "id"],
+        ["css=#login-submit", "css:finder"],
+        ["xpath=//button[@id='login-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='account']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d846459b-55d0-4469-ae7d-4094941e9982",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contato",
+      "targets": [
+        ["linkText=Contato", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Contato')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Contatos/Create')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contato')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8fa5f10-9422-4913-a1c2-6e77cd4fee69",
+      "comment": "",
+      "command": "click",
+      "target": "id=Telefone",
+      "targets": [
+        ["id=Telefone", "id"],
+        ["name=Telefone", "name"],
+        ["css=#Telefone", "css:finder"],
+        ["xpath=//input[@id='Telefone']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58685a9c-7e99-4d9f-b3be-eb8a07927102",
+      "comment": "",
+      "command": "type",
+      "target": "id=Telefone",
+      "targets": [
+        ["id=Telefone", "id"],
+        ["name=Telefone", "name"],
+        ["css=#Telefone", "css:finder"],
+        ["xpath=//input[@id='Telefone']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "11954593536"
+    }, {
+      "id": "7a3d6b88-0d2d-4346-81bc-e2c63cd4c343",
+      "comment": "",
+      "command": "click",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44fd9d6f-e6d9-4116-a8fc-e1e7cb9dc89d",
+      "comment": "",
+      "command": "type",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "silva.thiago@gmail.com"
+    }, {
+      "id": "d58d8aa8-50eb-46eb-b63d-0d835f5d3241",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Create']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d396cdd9-9f96-402c-9b21-146baec3c7ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) a:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(3) a:nth-child(3)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Delete')])[3]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Contatos/Delete/5')]", "xpath:href"],
+        ["xpath=//tr[3]/td[3]/a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d10e32aa-6b7a-4715-99a4-c10d2a7ba21b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//input[@value='Delete']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24f57940-86a7-4ac4-967a-dbe57f58ac24",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastro Cliente",
+      "targets": [
+        ["linkText=Cadastro Cliente", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastro Cliente')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/CadastroClientes/Create')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastro Cliente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8298cf4a-8cff-41b6-b58a-e6331dbaf474",
+      "comment": "",
+      "command": "click",
+      "target": "id=Nome",
+      "targets": [
+        ["id=Nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#Nome", "css:finder"],
+        ["xpath=//input[@id='Nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3baf3a6d-1645-440a-b143-782f7a80bd56",
+      "comment": "",
+      "command": "type",
+      "target": "id=Nome",
+      "targets": [
+        ["id=Nome", "id"],
+        ["name=Nome", "name"],
+        ["css=#Nome", "css:finder"],
+        ["xpath=//input[@id='Nome']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "alexandre"
+    }, {
+      "id": "36269069-17ac-49a0-8581-624f1eb09cd4",
+      "comment": "",
+      "command": "click",
+      "target": "id=Sobrenome",
+      "targets": [
+        ["id=Sobrenome", "id"],
+        ["name=Sobrenome", "name"],
+        ["css=#Sobrenome", "css:finder"],
+        ["xpath=//input[@id='Sobrenome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a0feb9d-d1d0-4e36-bdf1-618f697b3aca",
+      "comment": "",
+      "command": "type",
+      "target": "id=Sobrenome",
+      "targets": [
+        ["id=Sobrenome", "id"],
+        ["name=Sobrenome", "name"],
+        ["css=#Sobrenome", "css:finder"],
+        ["xpath=//input[@id='Sobrenome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "silva"
+    }, {
+      "id": "222c5b09-1ded-49de-ad3e-1f2d9ab94917",
+      "comment": "",
+      "command": "click",
+      "target": "id=Idade",
+      "targets": [
+        ["id=Idade", "id"],
+        ["name=Idade", "name"],
+        ["css=#Idade", "css:finder"],
+        ["xpath=//input[@id='Idade']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5346d1d1-45b7-426e-8a81-0ce886e3f4b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=Idade",
+      "targets": [
+        ["id=Idade", "id"],
+        ["name=Idade", "name"],
+        ["css=#Idade", "css:finder"],
+        ["xpath=//input[@id='Idade']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "4f8703cb-d851-4bbf-8a8e-e7f790d7d23f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Create']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c54b9c6-a061-47fa-b21a-a8ce7e488e5b",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) a:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(2) a:nth-child(3)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Delete')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/CadastroClientes/Delete/2')]", "xpath:href"],
+        ["xpath=//tr[2]/td[4]/a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "082f67fe-2386-43da-a77b-b224d8b80480",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//input[@value='Delete']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86b4e7e3-74d9-4b20-ba75-91bd153d1d9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) a:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(2) a:nth-child(3)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Delete')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/CadastroClientes/Delete/9')]", "xpath:href"],
+        ["xpath=//tr[2]/td[4]/a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "248cef88-ba82-4d69-8a0b-10843dd5015b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//input[@value='Delete']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2eceff1-e2fa-46af-8b43-fadca2de1aaf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Delete",
+      "targets": [
+        ["linkText=Delete", "linkText"],
+        ["css=tr:nth-child(1) a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Delete')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/CadastroClientes/Delete/1')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af8b63ac-2bc4-4f3b-a77a-66ec3790184f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//input[@value='Delete']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f5382c2-6e21-41fc-a374-97d15f1f1393",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pagina Principa",
+      "targets": [
+        ["linkText=Pagina Principa", "linkText"],
+        ["css=.flex-grow-1 > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Pagina Principa')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pagina Principa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88dcf34b-78e1-43c0-ac25-36fecaeb8fe7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastro e Consulta de Cliente",
+      "targets": [
+        ["linkText=Cadastro e Consulta de Cliente", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastro e Consulta de Cliente')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastro e Consulta de Cliente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a67c6ca4-e6ed-4ecf-b1ac-03f0bbebaf1b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d1224dc6-d8ef-4097-82f6-1dab2cf349e2"]
+  }],
+  "urls": ["https://localhost:5001/Contatos"],
+  "plugins": []
+}
